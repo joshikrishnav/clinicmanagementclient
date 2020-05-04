@@ -1,0 +1,7 @@
+<div class="basic-container">
+	<mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
+		<mat-grid-tile *ngFor="let patient of  patients">
+			{{patient.name}}
+		</mat-grid-tile>
+	</mat-grid-list>
+</div>

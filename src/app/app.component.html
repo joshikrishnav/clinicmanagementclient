@@ -1,4 +1,886 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<!-- Page Loader -->
+<DIV class="page-loader-wrapper">
+   <DIV class="loader">
+      <DIV class="preloader">
+         <DIV class="spinner-layer pl-red">
+            <DIV class="circle-clipper left">
+               <DIV class="circle"></DIV>
+            </DIV>
+            <DIV class="circle-clipper right">
+               <DIV class="circle"></DIV>
+            </DIV>
+         </DIV>
+      </DIV>
+      <P>Please wait...</P>
+   </DIV>
+</DIV>
+<!-- Overlay For Sidebars -->
+<DIV class="overlay"></DIV>
+<!-- #Float icon -->
+<UL class="mfbc-br mfb-zoomin" id="f-menu" data-mfb-toggle="hover">
+   <LI class="mfbc_wrap">
+      <A class="mfbcb-main g-bg-cyan" href="javascript:void(0);"><I class="mfbcm-icon-resting zmdi zmdi-plus"></I> <I
+            class="mfbcm-icon-active zmdi zmdi-close"></I>
+      </A>
+      <UL class="mfbc_list">
+         <LI><A class="mfb-child bg-blue" href="https://thememakker.com/templates/swift/hospital/doctor-schedule.html"
+               data-mfb-label="Doctor Schedule"><I class="zmdi zmdi-calendar mfbc_icon"></I></A></LI>
+         <LI><A class="mfb-child bg-orange" href="https://thememakker.com/templates/swift/hospital/patients.html"
+               data-mfb-label="Patients List"><I class="zmdi zmdi-account-o mfbc_icon"></I></A></LI>
+         <LI><A class="mfb-child bg-purple" href="https://thememakker.com/templates/swift/hospital/payments.html"
+               data-mfb-label="Payments"><I class="zmdi zmdi-balance-wallet mfbc_icon"></I></A></LI>
+      </UL>
+   </LI>
+</UL>
+<!-- Morphing Search  -->
+<DIV class="morphsearch" id="morphsearch">
+   <FORM class="morphsearch-form">
+      <DIV class="form-group m-0"><INPUT class="form-control morphsearch-input" type="search"
+            placeholder="Explore Swift..." value=""><BUTTON class="morphsearch-submit" type="submit">Search</BUTTON>
+      </DIV>
+   </FORM>
+   <DIV class="morphsearch-content">
+      <DIV class="dummy-column">
+         <H2>People</H2>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar1.jpg">
+            <H3>Sara Soueidan</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar2.jpg">
+            <H3>Rachel Smith</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar3.jpg">
+            <H3>Peter Finlan</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar4.jpg">
+            <H3>Patrick Cox</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar5.jpg">
+            <H3>Tim Holman</H3>
+         </A>
+      </DIV>
+      <DIV class="dummy-column">
+         <H2>Popular</H2>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar5.jpg">
+            <H3>Sara Soueidan</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar4.jpg">
+            <H3>Rachel Smith</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar1.jpg">
+            <H3>Peter Finlan</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar2.jpg">
+            <H3>Patrick Cox</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar3.jpg">
+            <H3>Tim Holman</H3>
+         </A>
+      </DIV>
+      <DIV class="dummy-column">
+         <H2>Recent</H2>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar1.jpg">
+            <H3>Sara Soueidan</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar5.jpg">
+            <H3>Rachel Smith</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar1.jpg">
+            <H3>Peter Finlan</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar4.jpg">
+            <H3>Patrick Cox</H3>
+         </A>
+         <A class="dummy-media-object" href="javascript:void(0);">
+            <IMG class="rounded" alt="" src="Swift%20-%20Hospital%20Admin%20_files/avatar2.jpg">
+            <H3>Tim Holman</H3>
+         </A>
+      </DIV>
+   </DIV>
+   <SPAN class="morphsearch-close"></SPAN>
+</DIV>
+<!-- Top Bar -->
+<NAV class="navbar clearHeader">
+   <DIV class="col-12">
+      <DIV class="navbar-header"><A class="bars" href="javascript:void(0);"></A> <A class="navbar-brand"
+            href="https://thememakker.com/templates/swift/hospital/index.html">Swift
+            Hospital</A>
+      </DIV>
+      <UL class="nav navbar-nav navbar-right">
+         <!-- Notifications -->
+         <LI class="dropdown">
+            <A class="dropdown-toggle" role="button" href="javascript:void(0);" data-toggle="dropdown"><I
+                  class="zmdi zmdi-notifications"></I> <SPAN class="label-count">7</SPAN>
+            </A>
+            <UL class="dropdown-menu">
+               <LI class="header">NOTIFICATIONS</LI>
+               <LI class="body">
+                  <UL class="menu">
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <DIV class="icon-circle bg-light-green"><I class="zmdi zmdi-account-add"></I></DIV>
+                           <DIV class="menu-info">
+                              <H4>12 new members joined</H4>
+                              <P><I class="material-icons">access_time</I> 14 mins
+                                 ago
+                              </P>
+                           </DIV>
+                        </A>
+                     </LI>
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <DIV class="icon-circle bg-cyan"><I class="zmdi zmdi-shopping-cart-plus"></I></DIV>
+                           <DIV class="menu-info">
+                              <H4>4 sales made</H4>
+                              <P><I class="material-icons">access_time</I> 22 mins
+                                 ago
+                              </P>
+                           </DIV>
+                        </A>
+                     </LI>
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <DIV class="icon-circle bg-red"><I class="zmdi zmdi-delete"></I></DIV>
+                           <DIV class="menu-info">
+                              <H4><B>Nancy Doe</B> deleted account</H4>
+                              <P><I class="material-icons">access_time</I> 3 hours
+                                 ago
+                              </P>
+                           </DIV>
+                        </A>
+                     </LI>
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <DIV class="icon-circle bg-orange"><I class="zmdi zmdi-edit"></I></DIV>
+                           <DIV class="menu-info">
+                              <H4><B>Nancy</B> changed name</H4>
+                              <P><I class="material-icons">access_time</I> 2 hours
+                                 ago
+                              </P>
+                           </DIV>
+                        </A>
+                     </LI>
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <DIV class="icon-circle bg-blue-grey"><I class="zmdi zmdi-comment-alt-text"></I></DIV>
+                           <DIV class="menu-info">
+                              <H4><B>John</B> commented your post</H4>
+                              <P><I class="material-icons">access_time</I> 4 hours
+                                 ago
+                              </P>
+                           </DIV>
+                        </A>
+                     </LI>
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <DIV class="icon-circle bg-light-green"><I class="zmdi zmdi-refresh-alt"></I></DIV>
+                           <DIV class="menu-info">
+                              <H4><B>John</B> updated status</H4>
+                              <P><I class="material-icons">access_time</I> 3 hours
+                                 ago
+                              </P>
+                           </DIV>
+                        </A>
+                     </LI>
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <DIV class="icon-circle bg-purple"><I class="zmdi zmdi-settings"></I></DIV>
+                           <DIV class="menu-info">
+                              <H4>Settings updated</H4>
+                              <P><I class="material-icons">access_time</I>
+                                 Yesterday
+                              </P>
+                           </DIV>
+                        </A>
+                     </LI>
+                  </UL>
+               </LI>
+               <LI class="footer"><A href="javascript:void(0);">View All
+                     Notifications</A>
+               </LI>
+            </UL>
+         </LI>
+         <!-- #END# Notifications -->
+         <!-- Tasks -->
+         <LI class="dropdown">
+            <A class="dropdown-toggle" role="button" href="javascript:void(0);" data-toggle="dropdown"><I
+                  class="zmdi zmdi-flag"></I><SPAN class="label-count">9</SPAN> </A>
+            <UL class="dropdown-menu">
+               <LI class="header">TASKS</LI>
+               <LI class="body">
+                  <UL class="menu tasks">
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <H4> Task 1 <SMALL>32%</SMALL> </H4>
+                           <DIV class="progress">
+                              <DIV class="progress-bar bg-pink" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                 aria-valuemax="100" style="width: 32%;"></DIV>
+                           </DIV>
+                        </A>
+                     </LI>
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <H4>Task 2 <SMALL>45%</SMALL> </H4>
+                           <DIV class="progress">
+                              <DIV class="progress-bar bg-cyan" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                 aria-valuemax="100" style="width: 45%;"></DIV>
+                           </DIV>
+                        </A>
+                     </LI>
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <H4>Task 3 <SMALL>54%</SMALL> </H4>
+                           <DIV class="progress">
+                              <DIV class="progress-bar bg-teal" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                 aria-valuemax="100" style="width: 54%;"></DIV>
+                           </DIV>
+                        </A>
+                     </LI>
+                     <LI>
+                        <A href="javascript:void(0);">
+                           <H4> Task 4 <SMALL>65%</SMALL> </H4>
+                           <DIV class="progress">
+                              <DIV class="progress-bar bg-orange" role="progressbar" aria-valuenow="85"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></DIV>
+                           </DIV>
+                        </A>
+                     </LI>
+                  </UL>
+               </LI>
+               <LI class="footer"><A href="javascript:void(0);">View All
+                     Tasks</A>
+               </LI>
+            </UL>
+         </LI>
+         <!-- #END# Tasks -->
+         <LI><A class="js-right-sidebar" href="javascript:void(0);" data-close="true"><I
+                  class="zmdi zmdi-settings"></I></A></LI>
+      </UL>
+   </DIV>
+</NAV>
+<!-- #Top Bar -->
+<SECTION>
+   <!-- Left Sidebar -->
+   <ASIDE class="sidebar" id="leftsidebar">
+      <!-- User Info -->
+      <DIV class="user-info">
+         <DIV class="admin-image"><IMG alt="" src="Swift%20-%20Hospital%20Admin%20_files/random-avatar7.jpg"> </DIV>
+         <DIV class="admin-action-info">
+            <SPAN>Welcome</SPAN>
+            <H3>Dr. John</H3>
+            <UL>
+               <LI><A title="Go to Inbox" href="https://thememakker.com/templates/swift/hospital/mail-inbox.html"><I
+                        class="zmdi zmdi-email"></I></A></LI>
+               <LI><A title="Go to Profile" href="https://thememakker.com/templates/swift/hospital/profile.html"><I
+                        class="zmdi zmdi-account"></I></A></LI>
+               <LI><A class="js-right-sidebar" href="javascript:void(0);" data-close="true"><I
+                        class="zmdi zmdi-settings"></I></A></LI>
+               <LI><A title="sign out" href="https://thememakker.com/templates/swift/hospital/sign-in.html"><I
+                        class="zmdi zmdi-sign-in"></I></A></LI>
+            </UL>
+         </DIV>
+         <DIV class="quick-stats">
+            <H5>Today Report</H5>
+            <UL>
+               <LI><SPAN>16<I>Patient</I></SPAN></LI>
+               <LI><SPAN>20<I>Panding</I></SPAN></LI>
+               <LI><SPAN>04<I>Visit</I></SPAN></LI>
+            </UL>
+         </DIV>
+      </DIV>
+      <!-- #User Info -->
+      <!-- Menu -->
+      <DIV class="menu">
+         <UL class="list">
+            <LI class="header">MAIN NAVIGATION</LI>
+            <LI><A href="https://thememakker.com/templates/swift/hospital/index.html"><I
+                     class="zmdi zmdi-home"></I><SPAN>Dashboard</SPAN></A></LI>
+            <LI>
+               <A class="menu-toggle" href="javascript:void(0);"><I
+                     class="zmdi zmdi-calendar-check"></I><SPAN>Appointment</SPAN>
+               </A>
+               <UL class="ml-menu">
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/doctor-schedule.html">Doctor
+                        Schedule</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/book-appointment.html">Book
+                        Appointment</A>
+                  </LI>
+               </UL>
+            </LI>
+            <LI>
+               <A class="menu-toggle" href="javascript:void(0);"><I
+                     class="zmdi zmdi-account-add"></I><SPAN>Doctors</SPAN>
+               </A>
+               <UL class="ml-menu">
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/doctors.html">All
+                        Doctors</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/add-doctor.html">Add
+                        Doctor</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/profile.html">Doctor
+                        Profile</A>
+                  </LI>
+               </UL>
+            </LI>
+            <LI class="active open">
+               <A class="menu-toggle" href="javascript:void(0);"><I
+                     class="zmdi zmdi-account-o"></I><SPAN>Patients</SPAN> </A>
+               <UL class="ml-menu">
+                  <LI class="active"><A href="https://thememakker.com/templates/swift/hospital/patients.html">All
+                        Patients</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/add-patient.html">Add
+                        Patient</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/patient-profile.html">Patient
+                        Profile</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/patient-invoice.html">Patient
+                        Invoice</A>
+                  </LI>
+               </UL>
+            </LI>
+            <LI>
+               <A class="menu-toggle" href="javascript:void(0);"><I
+                     class="zmdi zmdi-balance-wallet"></I><SPAN>Payments</SPAN>
+               </A>
+               <UL class="ml-menu">
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/payments.html">Payments</A></LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/add-payments.html">Add
+                        Payment</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/patient-invoice.html">Patient
+                        Invoice</A>
+                  </LI>
+               </UL>
+            </LI>
+            <LI><A href="https://thememakker.com/templates/swift/hospital/reports.html"><I
+                     class="zmdi zmdi-file-text"></I><SPAN>Reports</SPAN></A></LI>
+            <LI><A href="https://thememakker.com/templates/swift/hospital/widgets.html"><I
+                     class="zmdi zmdi-delicious"></I><SPAN>Widgets</SPAN></A></LI>
+            <LI>
+               <A class="menu-toggle" href="javascript:void(0);"><I class="zmdi zmdi-copy"></I><SPAN>Extra
+                     Pages</SPAN> </A>
+               <UL class="ml-menu">
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/sign-in.html">Sign
+                        In</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/sign-up.html">Sign
+                        Up</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/forgot-password.html">Forgot
+                        Password</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/404.html">Page
+                        404</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/500.html">Page
+                        500</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/page-offline.html">Page
+                        Offline</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/locked.html">Locked
+                        Screen</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/blank.html">Blank
+                        Page</A>
+                  </LI>
+               </UL>
+            </LI>
+            <LI>
+               <A class="menu-toggle" href="javascript:void(0);"><I class="zmdi zmdi-swap-alt"></I><SPAN>User
+                     Interface (UI)</SPAN> </A>
+               <UL class="ml-menu">
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/typography.html">Typography</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/helper-classes.html">Helper
+                        Classes</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/alerts.html">Alerts</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/animations.html">Animations</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/badges.html">Badges</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/breadcrumbs.html">Breadcrumbs</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/buttons.html">Buttons</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/collapse.html">Collapse</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/colors.html">Colors</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/dialogs.html">Dialogs</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/icons.html">Icons</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/labels.html">Labels</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/list-group.html">List
+                        Group</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/media-object.html">Media
+                        Object</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/modals.html">Modals</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/notifications.html">Notifications</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/pagination.html">Pagination</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/preloaders.html">Preloaders</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/progressbars.html">Progress
+                        Bars</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/range-sliders.html">Range
+                        Sliders</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/sortable-nestable.html">Sortable
+                        &amp; Nestable</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/tabs.html">Tabs</A>
+                  </LI>
+                  <LI><A href="https://thememakker.com/templates/swift/hospital/waves.html">Waves</A>
+                  </LI>
+               </UL>
+            </LI>
+            <LI class="header">LABELS</LI>
+            <LI><A href="javascript:void(0);"><I class="zmdi zmdi-chart-donut col-red"></I><SPAN>Important</SPAN> </A>
+            </LI>
+            <LI><A href="javascript:void(0);"><I class="zmdi zmdi-chart-donut col-amber"></I><SPAN>Warning</SPAN> </A>
+            </LI>
+            <LI><A href="javascript:void(0);"><I class="zmdi zmdi-chart-donut col-blue"></I><SPAN>Information</SPAN>
+               </A> </LI>
+         </UL>
+      </DIV>
+      <!-- #Menu -->
+   </ASIDE>
+   <!-- Right Sidebar -->
+   <ASIDE class="right-sidebar" id="rightsidebar">
+      <UL class="nav nav-tabs tab-nav-right" role="tablist">
+         <LI class="nav-item"><A class="nav-link active"
+               href="https://thememakker.com/templates/swift/hospital/patients.html#skins" data-toggle="tab">Skins</A>
+         </LI>
+         <LI class="nav-item"><A class="nav-link"
+               href="https://thememakker.com/templates/swift/hospital/patients.html#chat" data-toggle="tab">Chat</A>
+         </LI>
+         <LI class="nav-item"><A class="nav-link"
+               href="https://thememakker.com/templates/swift/hospital/patients.html#settings"
+               data-toggle="tab">Setting</A></LI>
+      </UL>
+      <DIV class="tab-content">
+         <DIV class="tab-pane in active in active" id="skins" role="tabpanel">
+            <UL class="demo-choose-skin">
+               <LI data-theme="red">
+                  <DIV class="red"></DIV>
+                  <SPAN>Red</SPAN>
+               </LI>
+               <LI data-theme="purple">
+                  <DIV class="purple"></DIV>
+                  <SPAN>Purple</SPAN>
+               </LI>
+               <LI data-theme="blue">
+                  <DIV class="blue"></DIV>
+                  <SPAN>Blue</SPAN>
+               </LI>
+               <LI class="active" data-theme="cyan">
+                  <DIV class="cyan"></DIV>
+                  <SPAN>Cyan</SPAN>
+               </LI>
+               <LI data-theme="green">
+                  <DIV class="green"></DIV>
+                  <SPAN>Green</SPAN>
+               </LI>
+               <LI data-theme="deep-orange">
+                  <DIV class="deep-orange"></DIV>
+                  <SPAN>Deep Orange</SPAN>
+               </LI>
+               <LI data-theme="blue-grey">
+                  <DIV class="blue-grey"></DIV>
+                  <SPAN>Blue Grey</SPAN>
+               </LI>
+               <LI data-theme="black">
+                  <DIV class="black"></DIV>
+                  <SPAN>Black</SPAN>
+               </LI>
+               <LI data-theme="blush">
+                  <DIV class="blush"></DIV>
+                  <SPAN>Blush</SPAN>
+               </LI>
+            </UL>
+         </DIV>
+         <DIV class="tab-pane" id="chat" role="tabpanel">
+            <DIV class="demo-settings">
+               <DIV class="search">
+                  <DIV class="input-group">
+                     <DIV class="form-line"><INPUT class="form-control" autofocus="" required="" type="text"
+                           placeholder="Search..." value=""></DIV>
+                  </DIV>
+               </DIV>
+               <H6>Recent</H6>
+               <UL>
+                  <LI class="online">
+                     <DIV class="media">
+                        <A href="javascript:void(0);"><IMG class="media-object " alt=""
+                              src="Swift%20-%20Hospital%20Admin%20_files/avatar1.jpg"></A>
+                        <DIV class="media-body"><SPAN class="name">Claire Sassu</SPAN><SPAN class="message">Can
+                              you share the</SPAN> <SPAN class="badge badge-outline status"></SPAN>
+                        </DIV>
+                     </DIV>
+                  </LI>
+                  <LI class="online">
+                     <DIV class="media">
+                        <A href="javascript:void(0);"><IMG class="media-object " alt=""
+                              src="Swift%20-%20Hospital%20Admin%20_files/avatar2.jpg"></A>
+                        <DIV class="media-body"><SPAN class="name">Maggie jackson</SPAN><SPAN class="message">Can
+                              you share the</SPAN> <SPAN class="badge badge-outline status"></SPAN>
+                        </DIV>
+                     </DIV>
+                  </LI>
+                  <LI class="online">
+                     <DIV class="media">
+                        <A href="javascript:void(0);"><IMG class="media-object " alt=""
+                              src="Swift%20-%20Hospital%20Admin%20_files/avatar3.jpg"></A>
+                        <DIV class="media-body"><SPAN class="name">Joel King</SPAN><SPAN class="message">Ready
+                              for the meeti</SPAN> <SPAN class="badge badge-outline status"></SPAN>
+                        </DIV>
+                     </DIV>
+                  </LI>
+               </UL>
+               <H6>Contacts</H6>
+               <UL class="contacts_list">
+                  <LI class="offline">
+                     <DIV class="media">
+                        <A href="javascript:void(0);"><IMG class="media-object " alt=""
+                              src="Swift%20-%20Hospital%20Admin%20_files/avatar4.jpg"></A>
+                        <DIV class="media-body"><SPAN class="name">Hossein Shams</SPAN><SPAN
+                              class="badge badge-outline status"></SPAN>
+                        </DIV>
+                     </DIV>
+                  </LI>
+                  <LI class="online">
+                     <DIV class="media">
+                        <A href="javascript:void(0);"><IMG class="media-object " alt=""
+                              src="Swift%20-%20Hospital%20Admin%20_files/avatar1.jpg"></A>
+                        <DIV class="media-body"><SPAN class="name">Maryam Amiri</SPAN><SPAN
+                              class="badge badge-outline status"></SPAN>
+                        </DIV>
+                     </DIV>
+                  </LI>
+                  <LI class="offline">
+                     <DIV class="media">
+                        <A href="javascript:void(0);"><IMG class="media-object " alt=""
+                              src="Swift%20-%20Hospital%20Admin%20_files/avatar2.jpg"></A>
+                        <DIV class="media-body"><SPAN class="name">Gary Camara</SPAN><SPAN
+                              class="badge badge-outline status"></SPAN>
+                        </DIV>
+                     </DIV>
+                  </LI>
+               </UL>
+            </DIV>
+         </DIV>
+         <DIV class="tab-pane" id="settings" role="tabpanel">
+            <DIV class="demo-settings">
+               <P>General settings</P>
+               <UL class="setting-list">
+                  <LI>
+                     <SPAN>Report Panel Usage</SPAN>
+                     <DIV class="switch"><LABEL><INPUT type="checkbox" checked="">
+                           <SPAN class="lever"></SPAN>
+                        </LABEL>
+                     </DIV>
+                  </LI>
+                  <LI>
+                     <SPAN>Email Redirect</SPAN>
+                     <DIV class="switch"><LABEL><INPUT type="checkbox">
+                           <SPAN class="lever"></SPAN> </LABEL>
+                     </DIV>
+                  </LI>
+               </UL>
+               <P>System settings</P>
+               <UL class="setting-list">
+                  <LI>
+                     <SPAN>Notifications</SPAN>
+                     <DIV class="switch"><LABEL><INPUT type="checkbox" checked="">
+                           <SPAN class="lever"></SPAN>
+                        </LABEL>
+                     </DIV>
+                  </LI>
+                  <LI>
+                     <SPAN>Auto Updates</SPAN>
+                     <DIV class="switch"><LABEL><INPUT type="checkbox" checked="">
+                           <SPAN class="lever"></SPAN>
+                        </LABEL>
+                     </DIV>
+                  </LI>
+               </UL>
+               <P>Account settings</P>
+               <UL class="setting-list">
+                  <LI>
+                     <SPAN>Offline</SPAN>
+                     <DIV class="switch"><LABEL><INPUT type="checkbox">
+                           <SPAN class="lever"></SPAN> </LABEL>
+                     </DIV>
+                  </LI>
+                  <LI>
+                     <SPAN>Location Permission</SPAN>
+                     <DIV class="switch"><LABEL><INPUT type="checkbox" checked="">
+                           <SPAN class="lever"></SPAN>
+                        </LABEL>
+                     </DIV>
+                  </LI>
+               </UL>
+            </DIV>
+         </DIV>
+      </DIV>
+   </ASIDE>
+</SECTION>
+<SECTION class="content patients">
+   <DIV class="container-fluid">
+      <DIV class="block-header">
+         <H2>All Patients</H2>
+         <SMALL class="text-muted">Welcome to Swift
+            application</SMALL>
+      </DIV>
+      <DIV class="row clearfix">
+         <DIV class="col-lg-4 col-md-6 col-sm-12">
+            <DIV class="card all-patients">
+               <DIV class="body">
+                  <DIV class="row">
+                     <DIV class="col-md-4 col-sm-4 text-center m-b-0"><A class="p-profile-pix"
+                           href="javascript:void(0);"><IMG class="img-thumbnail img-fluid" alt="user"
+                              src="Swift%20-%20Hospital%20Admin%20_files/130x130.png"></A>
+                     </DIV>
+                     <DIV class="col-md-8 col-sm-8 m-b-0">
+                        <H5 class="m-b-0">Johnathan Doe <A class="edit" href="javascript:void(0);"><I
+                                 class="zmdi zmdi-edit"></I></A></H5>
+                        <SMALL>Cardio</SMALL>
+                        <ADDRESS class="m-b-0"> 123 Folsom Ave, Suite
+                           100 New York, CADGE 56824<BR><ABBR title="Phone">P:</ABBR> (123) 456-7890
+                        </ADDRESS>
+                     </DIV>
+                  </DIV>
+               </DIV>
+            </DIV>
+         </DIV>
+         <DIV class="col-lg-4 col-md-6 col-sm-12">
+            <DIV class="card all-patients">
+               <DIV class="body">
+                  <DIV class="row">
+                     <DIV class="col-md-4 col-sm-4 text-center m-b-0"><A class="p-profile-pix"
+                           href="javascript:void(0);"><IMG class="img-thumbnail img-fluid" alt="user"
+                              src="Swift%20-%20Hospital%20Admin%20_files/130x130.png"></A>
+                     </DIV>
+                     <DIV class="col-md-8 col-sm-8 m-b-0">
+                        <H5 class="m-b-0">Johnathan Doe <A class="edit" href="javascript:void(0);"><I
+                                 class="zmdi zmdi-edit"></I></A></H5>
+                        <SMALL>Cardio</SMALL>
+                        <ADDRESS class="m-b-0"> 123 Folsom Ave, Suite
+                           100 New York, CADGE 56824<BR><ABBR title="Phone">P:</ABBR> (123) 456-7890
+                        </ADDRESS>
+                     </DIV>
+                  </DIV>
+               </DIV>
+            </DIV>
+         </DIV>
+         <DIV class="col-lg-4 col-md-6 col-sm-12">
+            <DIV class="card all-patients">
+               <DIV class="body">
+                  <DIV class="row">
+                     <DIV class="col-md-4 col-sm-4 text-center m-b-0"><A class="p-profile-pix"
+                           href="javascript:void(0);"><IMG class="img-thumbnail img-fluid" alt="user"
+                              src="Swift%20-%20Hospital%20Admin%20_files/130x130.png"></A>
+                     </DIV>
+                     <DIV class="col-md-8 col-sm-8 m-b-0">
+                        <H5 class="m-b-0">Johnathan Doe <A class="edit" href="javascript:void(0);"><I
+                                 class="zmdi zmdi-edit"></I></A></H5>
+                        <SMALL>Cardio</SMALL>
+                        <ADDRESS class="m-b-0"> 123 Folsom Ave, Suite
+                           100 New York, CADGE 56824<BR><ABBR title="Phone">P:</ABBR> (123) 456-7890
+                        </ADDRESS>
+                     </DIV>
+                  </DIV>
+               </DIV>
+            </DIV>
+         </DIV>
+         <DIV class="col-lg-4 col-md-6 col-sm-12">
+            <DIV class="card all-patients">
+               <DIV class="body">
+                  <DIV class="row">
+                     <DIV class="col-md-4 col-sm-4 text-center m-b-0"><A class="p-profile-pix"
+                           href="javascript:void(0);"><IMG class="img-thumbnail img-fluid" alt="user"
+                              src="Swift%20-%20Hospital%20Admin%20_files/130x130.png"></A>
+                     </DIV>
+                     <DIV class="col-md-8 col-sm-8 m-b-0">
+                        <H5 class="m-b-0">Johnathan Doe <A class="edit" href="javascript:void(0);"><I
+                                 class="zmdi zmdi-edit"></I></A></H5>
+                        <SMALL>Cardio</SMALL>
+                        <ADDRESS class="m-b-0"> 123 Folsom Ave, Suite
+                           100 New York, CADGE 56824<BR><ABBR title="Phone">P:</ABBR> (123) 456-7890
+                        </ADDRESS>
+                     </DIV>
+                  </DIV>
+               </DIV>
+            </DIV>
+         </DIV>
+         <DIV class="col-lg-4 col-md-6 col-sm-12">
+            <DIV class="card all-patients">
+               <DIV class="body">
+                  <DIV class="row">
+                     <DIV class="col-md-4 col-sm-4 text-center m-b-0"><A class="p-profile-pix"
+                           href="javascript:void(0);"><IMG class="img-thumbnail img-fluid" alt="user"
+                              src="Swift%20-%20Hospital%20Admin%20_files/130x130.png"></A>
+                     </DIV>
+                     <DIV class="col-md-8 col-sm-8 m-b-0">
+                        <H5 class="m-b-0">Johnathan Doe <A class="edit" href="javascript:void(0);"><I
+                                 class="zmdi zmdi-edit"></I></A></H5>
+                        <SMALL>Cardio</SMALL>
+                        <ADDRESS class="m-b-0"> 123 Folsom Ave, Suite
+                           100 New York, CADGE 56824<BR><ABBR title="Phone">P:</ABBR> (123) 456-7890
+                        </ADDRESS>
+                     </DIV>
+                  </DIV>
+               </DIV>
+            </DIV>
+         </DIV>
+         <DIV class="col-lg-4 col-md-6 col-sm-12">
+            <DIV class="card all-patients">
+               <DIV class="body">
+                  <DIV class="row">
+                     <DIV class="col-md-4 col-sm-4 text-center m-b-0"><A class="p-profile-pix"
+                           href="javascript:void(0);"><IMG class="img-thumbnail img-fluid" alt="user"
+                              src="Swift%20-%20Hospital%20Admin%20_files/130x130.png"></A>
+                     </DIV>
+                     <DIV class="col-md-8 col-sm-8 m-b-0">
+                        <H5 class="m-b-0">Johnathan Doe <A class="edit" href="javascript:void(0);"><I
+                                 class="zmdi zmdi-edit"></I></A></H5>
+                        <SMALL>Cardio</SMALL>
+                        <ADDRESS class="m-b-0"> 123 Folsom Ave, Suite
+                           100 New York, CADGE 56824<BR><ABBR title="Phone">P:</ABBR> (123) 456-7890
+                        </ADDRESS>
+                     </DIV>
+                  </DIV>
+               </DIV>
+            </DIV>
+         </DIV>
+         <DIV class="col-lg-4 col-md-6 col-sm-12">
+            <DIV class="card all-patients">
+               <DIV class="body">
+                  <DIV class="row">
+                     <DIV class="col-md-4 col-sm-4 text-center m-b-0"><A class="p-profile-pix"
+                           href="javascript:void(0);"><IMG class="img-thumbnail img-fluid" alt="user"
+                              src="Swift%20-%20Hospital%20Admin%20_files/130x130.png"></A>
+                     </DIV>
+                     <DIV class="col-md-8 col-sm-8 m-b-0">
+                        <H5 class="m-b-0">Johnathan Doe <A class="edit" href="javascript:void(0);"><I
+                                 class="zmdi zmdi-edit"></I></A></H5>
+                        <SMALL>Cardio</SMALL>
+                        <ADDRESS class="m-b-0"> 123 Folsom Ave, Suite
+                           100 New York, CADGE 56824<BR><ABBR title="Phone">P:</ABBR> (123) 456-7890
+                        </ADDRESS>
+                     </DIV>
+                  </DIV>
+               </DIV>
+            </DIV>
+         </DIV>
+         <DIV class="col-lg-4 col-md-6 col-sm-12">
+            <DIV class="card all-patients">
+               <DIV class="body">
+                  <DIV class="row">
+                     <DIV class="col-md-4 col-sm-4 text-center m-b-0"><A class="p-profile-pix"
+                           href="javascript:void(0);"><IMG class="img-thumbnail img-fluid" alt="user"
+                              src="Swift%20-%20Hospital%20Admin%20_files/130x130.png"></A>
+                     </DIV>
+                     <DIV class="col-md-8 col-sm-8 m-b-0">
+                        <H5 class="m-b-0">Johnathan Doe <A class="edit" href="javascript:void(0);"><I
+                                 class="zmdi zmdi-edit"></I></A></H5>
+                        <SMALL>Cardio</SMALL>
+                        <ADDRESS class="m-b-0"> 123 Folsom Ave, Suite
+                           100 New York, CADGE 56824<BR><ABBR title="Phone">P:</ABBR> (123) 456-7890
+                        </ADDRESS>
+                     </DIV>
+                  </DIV>
+               </DIV>
+            </DIV>
+         </DIV>
+         <DIV class="col-lg-4 col-md-6 col-sm-12">
+            <DIV class="card all-patients">
+               <DIV class="body">
+                  <DIV class="row">
+                     <DIV class="col-md-4 col-sm-4 text-center m-b-0"><A class="p-profile-pix"
+                           href="javascript:void(0);"><IMG class="img-thumbnail img-fluid" alt="user"
+                              src="Swift%20-%20Hospital%20Admin%20_files/130x130.png"></A>
+                     </DIV>
+                     <DIV class="col-md-8 col-sm-8 m-b-0">
+                        <H5 class="m-b-0">Johnathan Doe <A class="edit" href="javascript:void(0);"><I
+                                 class="zmdi zmdi-edit"></I></A></H5>
+                        <SMALL>Cardio</SMALL>
+                        <ADDRESS class="m-b-0"> 123 Folsom Ave, Suite
+                           100 New York, CADGE 56824<BR><ABBR title="Phone">P:</ABBR> (123) 456-7890
+                        </ADDRESS>
+                     </DIV>
+                  </DIV>
+               </DIV>
+            </DIV>
+         </DIV>
+         <DIV class="col-lg-4 col-md-6 col-sm-12">
+            <DIV class="card all-patients">
+               <DIV class="body">
+                  <DIV class="row">
+                     <DIV class="col-md-4 col-sm-4 text-center m-b-0"><A class="p-profile-pix"
+                           href="javascript:void(0);"><IMG class="img-thumbnail img-fluid" alt="user"
+                              src="Swift%20-%20Hospital%20Admin%20_files/130x130.png"></A>
+                     </DIV>
+                     <DIV class="col-md-8 col-sm-8 m-b-0">
+                        <H5 class="m-b-0">Johnathan Doe <A class="edit" href="javascript:void(0);"><I
+                                 class="zmdi zmdi-edit"></I></A></H5>
+                        <SMALL>Cardio</SMALL>
+                        <ADDRESS class="m-b-0"> 123 Folsom Ave, Suite
+                           100 New York, CADGE 56824<BR><ABBR title="Phone">P:</ABBR> (123) 456-7890
+                        </ADDRESS>
+                     </DIV>
+                  </DIV>
+               </DIV>
+            </DIV>
+         </DIV>
+      </DIV>
+   </DIV>
+</SECTION>
+<DIV class="color-bg"></DIV>
+
+<!--<mat-toolbar class="navbar clearHeader">
+	<mat-toolbar-row>
+		<h1>Clinic Management</h1>
+		<span class="menu-spacer"></span>
+		<div>
+
+			<a mat-button *ngFor='let link of navLinks' [routerLink]='[link.path]' routerLinkActive
+				#rla='routerLinkActive'>
+				{{link.label}}
+			</a>
+
+			<app-patient-autocomplete></app-patient-autocomplete>
+		</div>
+	</mat-toolbar-row>
+</mat-toolbar>
+
+<div class="container">
+	<router-outlet></router-outlet>
+</div>-->

@@ -1,0 +1,23 @@
+
+<mat-form-field>
+    <input matInput  aria-label="State" [matAutocomplete]="auto" [formControl]="searchPatientsCtrl">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngIf="isLoading" class="is-loading">Loading...</mat-option>
+      <ng-container *ngIf="!isLoading">
+        <mat-option *ngFor="let patient of filteredPatients" [value]="patient">
+          <span><b>{{patient.name}}</b></span>
+        </mat-option>
+      </ng-container>
+    </mat-autocomplete>
+  </mat-form-field>
+
+<!-- <form [formGroup]="myControl" class="example-form">
+	<mat-form-field class="example-full-width">
+		<input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+		<mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+			<mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+				{{option.name}}
+			</mat-option>
+		</mat-autocomplete>
+	</mat-form-field>
+</form> -->
