@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'ClinicManagementClient';
-
   navLinks: any[];
   activeLinkIndex = -1;
   constructor(private router: Router) {
